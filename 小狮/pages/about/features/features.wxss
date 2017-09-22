@@ -1,0 +1,37 @@
+/* features.wxss */
+.index{
+  background-color: #FFFFFF;
+}
+.my-title{
+  color: #353535;
+  text-align: center;
+  font-size:18pt;
+  font-weight: bolder;
+}
+.my-vice-title{
+  text-align: right;
+  margin-top: .77em;
+  margin-bottom: .3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999999;
+  font-size: 11pt;
+}
+.my-section{
+  text-align: left;
+  font-weight: bold;
+}
+.my-article-p{
+  margin: 0 0 .8em;
+  text-indent: 2em;
+}
+.emphasize{
+  font-weight: bold;
+  color: red;
+}
+.index-foot{
+ margin-top: 5px;
+ bottom: .52em;
+ left: 0;
+ right: 0;
+}

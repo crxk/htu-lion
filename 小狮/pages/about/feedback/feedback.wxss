@@ -1,0 +1,16 @@
+/* feedback.wxss */
+.my-font{
+  font-size: 13pt;
+  color: #b2b2b2;
+}
+.my-btn{
+  margin-top: 15px;
+  width: 100%;
+  background-color: #09bb07;
+}
+.index-foot{
+  position: fixed;
+  bottom: .52em;
+  left: 0;
+  right: 0;
+}

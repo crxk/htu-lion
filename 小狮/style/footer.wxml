@@ -1,0 +1,7 @@
+<template name="foot">
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <view class="weui-footer__text">Copyright © 1996-2017 灿若星空丶</view>
+    </view>
+  </view>
+</template>

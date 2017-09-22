@@ -1,0 +1,43 @@
+/* pages/index/detail/index.wxss */
+/**index.wxss**/
+
+.my-avatar {
+  position: absolute;
+  left: 30rpx;
+  top: 30rpx;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.my-publisher {
+  position: absolute;
+  left: 200rpx;
+  top: 65rpx;
+  color: black;
+  font-weight: bold;
+  font-size: 11pt;
+  font-family: "方正舒体";
+}
+.date{
+  position: absolute;
+  left: 180rpx;
+  top: 110rpx;
+  color: black;
+  font-weight: bold;
+  font-size: 8pt;
+  font-family: "方正舒体";
+}
+.page{
+  padding: 15px;
+  line-height: 1.6;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+.content{
+  padding: 20px 15px;
+  font-size: 15px;
+  text-indent: 2em;
+}
+.my-image{
+  text-align: center;
+}

@@ -1,0 +1,107 @@
+<!--found.wxml-->
+<import src="../../style/footer.wxml" />
+<image class="toWrite" bindtap="toAddInfo" src="../../images/add.png"></image>
+<scroll-view enable-back-to-top="ture" lower-threshold="5" bindscrolltolower="pullUpLoad" upper-threshold="50" scroll-y="true" style="height: {{windowHeight}}px;">
+  <view class="page__bd">
+    <view class="weui-panel">
+      <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+          <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="输入姓名搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+              <icon type="clear" size="14"></icon>
+            </view>
+          </view>
+          <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+          </label>
+        </view>
+        <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="toFind">搜索</view>
+      </view>
+      <!--weui-panel__hd 这个之前有 我覆盖到这个新的里面了 -->
+      <view class="mystyle-emphasize-font">捡到物品</view>
+      <view class="weui-panel__bd">
+        <block wx:if="{{infoList.length>0}}">
+          <navigator class="weui-media-box weui-media-box_text" wx:for="{{infoList}}" wx:key="infoItem" url="/pages/found/detail/index?objectId={{item.objectId}}">
+            <view class="my-section-title">
+              <text class="my-section-title" space="emsp">失主：{{item.name}}  类型：{{item.type}}</text>
+            </view>
+            <view class="weui-media-box__desc">{{item.content}}</view>
+            <view class="weui-media-box__info">
+              <view class="weui-media-box__info__meta weui-media-time">时间：{{item.date}}</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{item.publisher}}</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__operate">
+              </view>
+            </view>
+          </navigator>
+          <view class="page__ft">
+            <view class="page__bd page__bd_spacing">
+              <view class="weui-footer ">
+                <view class="weui-footer__text">到底啦，再拉一拉看看有没有……</view>
+              </view>
+            </view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="busy_view">
+            <image class="busy_pic" src="../../images/lion.png"></image>
+          </view>
+          <view class="busy_view">
+            <view class="weui-footer ">
+              <view class="weui-footer__text">小狮比较忙 稍等一下啦……</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<!-- 填写信息对话框内容-->
+<view class="classname">
+  <view class="js_dialog" id="androidDialog1" style="opacity: 1;" wx:if="{{writeInfo}}">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog weui-skin_android">
+      <view class="weui-dialog__hd"><strong class="weui-dialog__title">捡到物品信息</strong> </view>
+      <form bindsubmit="addInfo" report-submit="true">
+        <view class="weui-dialog__bd">
+          <view class="weui-cells__title">捡到物品类型</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                <radio-group class="radio-group" bindchange="radioChange" style="font-size:11pt">
+                  <label class="radio" wx:for="{{items}}">
+                <radio class="myradio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+              </label>
+                </radio-group>
+              </view>
+            </view>
+          </view>
+          <view class="weui-cells__title">失主姓名</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                <input class="weui-input" name="name" placeholder="请输入姓名" />
+              </view>
+            </view>
+          </view>
+          <view class="weui-cells__title">其他说明</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+              <view class="weui-cell__bd">
+                <textarea class="weui-textarea" name="content" placeholder="请输入详细情况，建议200字以内" style="height: 3.3em" />
+                <image class="toChoosePic" src="{{picPath}}" bindtap="chooseImage" wx:if="{{showPic}}"></image>
+                <image class="toChoosePic" src="../../images/choosePic.png" wx:if="{{!showPic}}" bindtap="chooseImage"></image>
+              </view>
+            </view>
+          </view>
+          <view class="weui-dialog__ft">
+            <view class="weui-dialog__btn weui-dialog__btn_default" bindtap="noneWindows">取消</view>
+            <button loading="{{loading}}" class="weui-dialog__btn weui-dialog__btn_primary" formType="submit">提交</button>
+          </view>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

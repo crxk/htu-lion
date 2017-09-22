@@ -1,0 +1,29 @@
+<!--features.wxml-->
+<view class="index">
+  <view class="weui-article">
+    <view class="weui-article__h1 my-title">htu小狮</view>
+    <view class="my-vice-title">——河师大失物招领平台</view>
+    <view class=" my-article-p">
+      <text space="ensp">htu小狮致力于为河南师范大学广大师生打造一个便捷、高效的失物招领平台，搭建起一座联系失主与好心人信息桥梁。</text>
+    </view>  
+      <view class="my-section weui-article__p">项目背景</view>
+      <view class="my-article-p"><text space="ensp">同学们丢东西的事情每天都会发生，大部分同学都会通过发QQ空间动态、微信朋友圈这两种方式来散布信息，寻找自己所丢失的物品。每天我也会在空间中看到各种各样寻找自己丢失物品的信息。</text></view>
+      <view class="my-article-p"><text space="ensp">这种寻找方式弊端很多最为突出有以下两点吧。</text></view>
+      <view class="my-article-p"><text space="ensp">第一，信息流通的局限性，一个人的好友数量是有限，你所发布的信息所能流通的范围也是有限的，纵使有同学朋友转发，所能波及的范围也在你和你朋友的交际圈里，而且你和你朋友的交际圈有很大一部分是重叠的。总而言之，一个人或者几个人的影响力是甚微的。</text></view>
+      <view class="my-article-p"><text space="ensp">第二，信息阅读的有效性，此类信息同学们早已经司空见惯，往往就是一刷而过，对于到底丢了什么，往往是不关心。就是说失主发布的信息，仅仅是被少部分人看见了，并没有注意到。</text></view>
+      <view class="my-article-p"><text space="ensp">为了解决上述问题，本人拟搭建一个丢失物品寻找平台，统一信息资源，让失主能尽快地找到自己所丢失的物品，让捡到东西的同学能及时地找到失主。平台就是一个桥梁，连接了失主与好心人，让他们不再在茫茫人海中苦苦相互焦急地追寻。</text></view>
+      <view class="my-section weui-article__p">平台优势</view>
+      <view class="my-article-p"><text space="ensp">htu小狮突破了个人交际圈的范围，可实现全校信息的流通与共享，而且小狮拥有<text class="emphasize">搜索</text>功能，以<text class="emphasize">姓名</text>作为关键字进行检索，大幅度提高了寻找物品的效率与速度。</text></view>
+      <view class="my-article-p"><text space="ensp">htu小狮搭建在微信小程序上，相比较与APP、网站最大的好处就是想用随时时可以用，很方便就能找得到，用完直接就走，不留下什么东西，也不会占用手机内存空间。</text></view>
+      <view class="my-section weui-article__p">名字含义</view>
+      <view class="my-article-p"><text space="ensp">htu小狮的狮与师大的师、丢失的失同音，寓意这是专属于河南师范大学的失物招领平；此外htu小狮还可以理解为是河师大里的一头小狮子，假以时日茁壮成长，定能有所影响给广大师生带来方便！</text></view>
+  </view>
+  <view class="index-foot">
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-footer">
+        <view class="weui-footer__text">Copyright © 1996-2017 灿若星空丶</view>
+        <view class="weui-footer__text">All Rights Reserved</view>
+      </view>
+    </view>
+  </view>
+</view>

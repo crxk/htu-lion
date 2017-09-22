@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/found/found",
+    "pages/found/detail/index",
+    "pages/index/index",
+    "pages/index/detail/index",
+    "pages/about/about",
+    "pages/about/doSomeThing/doSomeThing",
+    "pages/about/features/features",
+    "pages/about/feedback/feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "htu小狮",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":  "ture"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/found/found",
+        "iconPath": "images/found.png",
+        "selectedIconPath": "images/found_focus.png",
+        "text": "拾遗"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/find_focus.png",
+        "text": "遗失"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/about.png",
+        "selectedIconPath": "images/about_focus.png",
+        "text": "关于小狮"
+      }
+    ],
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff"
+  }
+}

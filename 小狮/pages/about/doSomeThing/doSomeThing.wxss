@@ -1,0 +1,23 @@
+/* aboutMe.wxss */
+.index{
+  padding: 20px 15px;
+}
+.my-article-p{
+  margin: 0 0 .8em;
+  text-indent: 2em;
+}
+.my-section{
+  text-align: left;
+  font-weight: bolder;
+  font-size: 18pt;
+}
+.my-image{
+  float: center;
+  width: 100%
+}
+.index-foot{
+ position: fixed;
+ bottom: .52em;
+ left: 0;
+ right: 0;
+}

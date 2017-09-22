@@ -1,0 +1,19 @@
+<!--aboutMe.wxml-->
+<view class="index">
+  <view class="my-article-p">一个人可以走得很快，但是一群人可以走得更远。</view>
+  <view class="my-article-p">我们喜欢各种技术但是又不止于技术，更多的是追求一些技术之外的事情</view>
+  <view class="my-article-p">如果你有一颗积极向上的心，不想在大学中平凡的度过，憧憬多姿多彩的生活，提升自我实力，欢迎发送你的个人简介到870250667@qq.com。</view>
+  <view class="my-article-p">加入我们，或许就是一次惊喜~</view>
+</view>
+<view class="index">
+  <view class="index-foot">
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-footer">
+        <view class="weui-footer__text">Copyright © 1996-2017 灿若星空丶</view>
+        <view class="weui-footer__text">All Rights Reserved</view>
+      </view>
+    </view>
+  </view>
+</view>
+  
+

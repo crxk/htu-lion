@@ -1,0 +1,24 @@
+<!--pages/index/detail/index.wxml-->
+<view class="page">
+  <view  class="page-head">
+    <image class="my-avatar" src="{{rows.avatarURL}}" background-size="cover"></image>
+    <text class="my-publisher">{{rows.publisher}}</text>
+    <text class="date">{{rows.createdAt}}</text>
+  </view>
+  <view class="">
+    <view class="content">
+      <text>{{rows.content}}</text>
+    </view>
+    <view class="my-image">
+      <image src="{{rows.picURL}}" mode="aspectFit"></image>
+    </view>
+    
+  </view>
+  <view class="weui-footer_fixed-bottom">
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-footer">
+        <view class="weui-footer__text my-font">捡到东西? 就找小狮！</view>
+      </view>
+    </view>
+  </view>
+</view>
