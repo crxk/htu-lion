@@ -24,7 +24,7 @@
       <view class="mystyle-emphasize-font">丢失物品</view>
       <view class="weui-panel__bd">
         <block wx:if="{{infoList.length>0}}">
-          <navigator class="weui-media-box weui-media-box_text" wx:for="{{infoList}}" wx:key="infoItem" url="/pages/index/detail/index?objectId={{item.objectId}}">
+          <navigator class="weui-media-box weui-media-box_text" wx:for="{{infoList}}" wx:key="infoItem" url="/pages/index/detail/detail?objectId={{item.objectId}}">
             <!--
             <view class="weui-media-box__title weui-media-box__title_in-text">
               失主：{{item.name}}\r\n 类型：{{item.type}}

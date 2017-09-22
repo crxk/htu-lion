@@ -5,6 +5,8 @@ var Util = require('utils/util.js')
 Bmob.initialize("b813e8b88c0b24bcfc65ad3db154d948", "04eb57ec45dc98f8463b701b450a92a2");
 App({
   onLaunch: function() {
+    //在这里取消了对于用户信息获取的逻辑，转到具体页面进行了获取。
+		//为了减少代码耦合，把相关操作写在了util.js
     /*
     //获取当前用户
     var currentUser = Bmob.User.current();
